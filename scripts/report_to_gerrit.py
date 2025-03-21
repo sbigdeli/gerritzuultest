@@ -1,7 +1,7 @@
 import requests
 
 GERRIT_URL = "https://your-gerrit-server.com" ## ÄNDRA TILL GERRIT !!!!!
-CHANGE_ID = "your-change-id"
+CHANGE_ID = "your-change-id" ##ÄNDRA TILL RÄTT CHANGE ID
 STATUS = "SUCCESS"  # eller "FAIL" beroende på resultat
 
 def report_to_gerrit(change_id, status):
