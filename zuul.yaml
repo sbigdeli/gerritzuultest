@@ -1,0 +1,17 @@
+- pipeline:
+    name: check
+    manager: IndependentPipeline
+    trigger: post
+    branches:
+      - master
+
+- job:
+    name: test-hello-world
+    description: Run hello-world test
+    run: playbooks/test-hello-world.yaml
+
+- project:
+    name: your-username/gerritzuultest
+    check:
+      jobs:
+        - test-hello-world

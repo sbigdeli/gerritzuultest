@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+    - name: Run hello world test
+      shell: python3 hello-world.py
+      register: result
+
+    - name: Check result
+      assert:
+        that:
+          - result.stdout == "Hello, World!"
