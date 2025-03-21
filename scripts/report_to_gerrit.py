@@ -17,7 +17,7 @@ def report_to_gerrit(change_id, status):
         "Content-Type": "application/json",
     }
 
-    response = requests.post(url, json=data, headers=headers, auth=("username", "password"))
+    response = requests.post(url, json=data, headers=headers, auth=("username", "password")) ##ÄNDRA TILL RÄTT GERRIT USERNAME OCH LÖSEN!!!
     if response.status_code == 200:
         print("Reported status to Gerrit successfully")
     else:
