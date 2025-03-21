@@ -1,6 +1,6 @@
 import requests
 
-GERRIT_URL = "https://your-gerrit-server.com"
+GERRIT_URL = "https://your-gerrit-server.com" ## ÄNDRA TILL GERRIT !!!!!
 CHANGE_ID = "your-change-id"
 STATUS = "SUCCESS"  # eller "FAIL" beroende på resultat
 
